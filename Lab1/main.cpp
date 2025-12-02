@@ -30,6 +30,7 @@ int main() {
     linie(35, 61, 35, 35, 1);
     printf("\n%c A %c not A %c", 124, 124, 124);
     linie(35, 61, 35, 35, 1);
+
     for (int a = 0; a <= 1; a++) {
         printf("\n%c %d %c %3d %3c", 124, a, 124, !a, 124);
     }
@@ -41,7 +42,9 @@ int main() {
     linie(35, 61, 35, 35);
     printf("\n%c A %c B %cA and B%c", 124, 124, 124, 124);
     linie(35, 61, 35, 35);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
             printf("\n%c %d %c %d %c %3d %3c", 124, a, 124, b, 124, a&&b, 124);
         }
@@ -54,7 +57,9 @@ int main() {
     linie(35, 61, 35, 35);
     printf("\n%c A %c B %c A or B%c", 124, 124, 124, 124);
     linie(35, 61, 35, 35);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
             printf("\n%c %d %c %d %c %3d %3c", 124, a, 124, b, 124, a||b, 124);
         }
@@ -67,7 +72,9 @@ int main() {
     linie(35, 61, 35, 35);
     printf("\n%c A %c B %cA dif B%c", 124, 124, 124, 124);
     linie(35, 61, 35, 35);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
             printf("\n%c %d %c %d %c %3d %3c", 124, a, 124, b, 124, a && !b, 124);
         }
@@ -76,10 +83,13 @@ int main() {
 
 
     cout << "\nt6. XOR";
+
     linie(35, 61, 35, 35);
     printf("\n%c A %c B %cA XOR B%c", 124, 124, 124, 124);
     linie(35, 61, 35, 35);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
             printf("\n%c %d %c %d %c %3d %3c", 124, a, 124, b, 124, a ^ b, 124);
         }
@@ -88,10 +98,13 @@ int main() {
 
 
     cout << "\nt6. Implicatia";
+
     linie(35, 61, 35, 35);
     printf("\n%c A %c B %c A -> B%c", 124, 124, 124, 124);
     linie(35, 61, 35, 35);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
             printf("\n%c %d %c %d %c %3d %3c", 124, a, 124, b, 124, !a || b, 124);
         }
@@ -100,10 +113,13 @@ int main() {
 
 
     cout << "\nt7. Echivalenta";
+
     linie(35, 61, 35, 35);
     printf("\n%c A %c B %c A = B %c", 124, 124, 124, 124);
     linie(35, 61, 35, 35);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
             printf("\n%c %d %c %d %c %3d %3c", 124, a, 124, b, 124, a == b, 124);
         }
@@ -112,11 +128,15 @@ int main() {
 
 
     cout << "\nt8. Problema cu 3 variabile";
+
     linie(35, 61, 35, 35, 3, 12);
     printf("\n%c A %c B %c C %cA AND B OR C%c", 124, 124, 124, 124, 124);
     linie(35, 61, 35, 35, 3, 12);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
+
             for (int c = 0; c <= 1; c++) {
                 printf("\n%c %d %c %d %c %d %c %6d %5c", 124, a, 124, b, 124, c, 124, a && b || c, 124);
             }
@@ -128,18 +148,51 @@ int main() {
 
     //Profesorul poate duce o lectie SAU un elev SI un assistent pot duce o lectie
 
-    cout << "\nt9. Promblema de logica";
+    cout << "\nt9. Problema de logica";
+
     linie(35, 61, 35, 35, 3, 12);
     printf("\n%c P %c S %c A %cP sau S si A%c", 124, 124, 124, 124, 124);
     linie(35, 61, 35, 35, 3, 12);
+
     for (int a = 0; a <= 1; a++) {
+
         for (int b = 0; b <= 1; b++) {
+
             for (int c = 0; c <= 1; c++) {
                 printf("\n%c %d %c %d %c %d %c %6d %5c", 124, a, 124, b, 124, c, 124, a || b && c, 124);
             }
         }
     }
     linie(35, 61, 35, 35, 3, 12);
+
+
+    // O persoana poate intra in cladire daca:
+    // Paza principală (P) sau paznicul secundar (S) autorizează intrarea,
+    // și în același timp
+    //
+    // fie alarma (A) NU este activată,
+    // fie operatorul tehnic (T) confirmă manual accesul.
+
+    cout << "\nt10. Problema de logica";
+
+    linie(35, 61, 35, 35, 4, 21);
+    printf("\n%c P %c S %c A %c T %cP sau S si nu A sau T%c", 124, 124, 124, 124, 124, 124);
+    linie(35, 61, 35, 35, 4, 21);
+
+    for (int a = 0; a <= 1; a++) {
+
+        for (int b = 0; b <= 1; b++) {
+
+            for (int c = 0; c <= 1; c++) {
+
+                for (int d = 0; d <= 1; d++) {
+                    printf("\n%c %d %c %d %c %d %c %d %c %11d %9c", 124, a, 124, b, 124, c, 124, d, 124, a || b && !c || d, 124);
+                }
+            }
+        }
+    }
+    linie(35, 61, 35, 35, 4, 21);
+
 
     return 0;
 }
